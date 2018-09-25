@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>HomePage</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://dsu.aubmc.org.lb/SiteAssets/PromotedLinks/MicrosoftAjax.js" type="text/javascript">
+  </script>
+  <script src="https://dsu.aubmc.org.lb/SiteAssets/PromotedLinks/jquery-3.3.1.min.js" type="text/javascript">
+  </script>
+  <script type="text/javascript" src="https://dsu.aubmc.org.lb/_layouts/15/sp.runtime.js">
+  </script>
+  <script type="text/javascript" src="https://dsu.aubmc.org.lb/_layouts/15/sp.js">
+  </script>
+  <script type="text/javascript" src="https://dsu.aubmc.org.lb/_layouts/15/SP.RequestExecutor.js">
+  </script>
+</head>
+<body>
+
+  <!--<input type="button" value="Test" onclick="execCrossDomainRequest();">
+  <div id="renderAnnouncements"></div>-->
+  <app-root></app-root>
+
+
+  <script type="text/javascript">
+    function mouseOver(e) {
+        document.getElementById(e).style.top = "0px";
+        document.getElementById(e).style.transition = ".3s";
+    };
+
+    function mouseOut(e) {
+        document.getElementById(e).style.top = "100px";
+    };
+/*
+    var siteUrl = "https://dsu.aubmc.org.lb";
+
+    function execCrossDomainRequest(){
+        var executor = new SP.RequestExecutor(siteUrl);
+
+        executor.executeAsync(
+            {
+                url: siteUrl + "/_api/lists/getbytitle('PortalPages')/items",
+                method: "GET",
+                headers: { "Accept": "application/json; odata=verbose"},
+                success: successHandler,
+                error: errorHandler
+            }
+        );
+    }
+
+    function successHandler(data) {
+        //console.log(data.body);
+
+        var jsonObject = JSON.parse(data.body);
+        var announcementsHTML = "";
+
+        var results = jsonObject.d.results;
+        var links = [];
+        for (var i = 0; i < results.length; i++) {
+          announcementsHTML = announcementsHTML +
+              "<p><h1>" + results[i].Title +
+              "</h1>" + results[i].Description +
+              "</p><hr>";
+
+          links.push({ num: results[i].Num,
+                        title: results[i].Title,
+                        description: results[i].Description,
+                        imageUrl: results[i].Image.Url,
+                        url: results[i].URL.Url });
+        }
+        console.log(links);
+        document.getElementById("renderAnnouncements").innerHTML =
+            announcementsHTML;
+
+      }
+
+      function errorHandler(data, errorCode, errorMessage) {
+        document.getElementById("renderAnnouncements").innerText =
+            "Could not complete cross-domain call: " + errorMessage;
+      };
+*/
+</script>
+</body>
+</html>

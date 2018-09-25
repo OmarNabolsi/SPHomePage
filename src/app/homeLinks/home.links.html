@@ -1,0 +1,38 @@
+<div id="Tile_1_1"
+  class="pl-tileview-tile-root"
+  style="width: 160px; height: 160px;"
+  >
+  <div id="Tile_1_2"
+    (mouseenter)="mouseOver(portalPages.num)"
+    (mouseleave)="mouseOut(portalPages.num)"
+    class="pl-tileview-tile-content"
+    style="width:150px; height:150px;"
+    aria-haspopup="true">
+      <a id="Tile_1_3"
+        href={{portalPages.url}} >
+          <span style="height:150px; width:150px; position:relative; display:inline-block; overflow: hidden;">
+              <img src="{{ portalPages.imageUrl }}"
+                alt="Share your site."
+                style="left:-300px; top:-0px; position:absolute;"
+                onerror="return OnLoadError(this);">
+          </span>
+          <div id="{{ portalPages.num }}"
+            style="width:150px; height:150px; top:100px; left:0px;"
+            class="pl-tileview-tile-detailsBox">
+              <ul class="pl-noList pl-tileview-tile-detailsListMedium">
+                  <li id="Tile_1_5"
+                    collapsed="pl-tileview-tile-tileMedium pl-tileview-tile-tileMediumCollapsed"
+                    expanded="pl-tileview-tile-tileMedium pl-tileview-tile-tileMediumExpanded"
+                    class="pl-tileview-tile-tileMedium pl-tileview-tile-tileMediumCollapsed">
+                      <div collapsed="pl-tileview-tile-titleTextMediumCollapsed"
+                        expanded="pl-tileview-tile-titleTextMediumExpanded"
+                        class="pl-tileview-tile-titleTextMediumCollapsed">{{portalPages.title}}</div>
+                  </li>
+                  <li id="Tile_1_6"
+                    title="Description."
+                    class="pl-tileview-tile-descriptionMedium">{{portalPages.description}}</li>
+              </ul>
+          </div>
+      </a>
+  </div>
+</div>

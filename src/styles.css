@@ -1,0 +1,102 @@
+.pl-main {
+  width: 100%;
+  overflow: hidden;
+}
+
+.pl-header {
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+
+.pl-parttitle {
+  padding-right: 10px;
+  display: inline;
+  line-height: 1.4;
+  font-size: 1.46em;
+  font-weight: 300;
+  margin: auto;
+}
+
+.ms-webpart-titleText {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #444;
+  overflow: hidden;
+  text-align: justify;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pl-body {
+  position: relative;
+  width: 10000px;
+  height: 150px;
+}
+
+.pl-tileview-tile-root {
+  float: left;
+}
+
+.pl-tileview-tile-content {
+  background-color: #0072c6;
+  position: relative;
+  overflow: hidden;
+}
+
+img {
+  border: none;
+  -webkit-tab-highlight-color: transparent;
+}
+
+.pl-tileview-tile-detailsBox {
+  color: #fff;
+  background-color: rgba(0,0,0,0.6 );
+  position: absolute;
+}
+
+.pl-noList {
+  list-style-type: none;
+}
+
+.pl-tileview-tile-detailsListMedium {
+  height: 150px;
+  overflow: hidden;
+  padding: 10px;
+  padding-top: 6px;
+  margin: 0px;
+}
+
+.pl-tileview-tile-tileMedium {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  font-size: 1em;
+}
+
+.pl-tileview-tile-tileMediumCollapsed {
+  display: table-cell;
+  height: 36px;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.pl-tileview-tile-tileMediumExpanded {
+  display: table-cell;
+  max-height: 52px;
+  overflow: hidden;
+}
+
+.pl-tileview-tile-titleTextMediumCollapsed {
+  max-height: 36px;
+  overflow: hidden;
+}
+
+.pl-tileview-tile-titleTextMediumExpanded {
+  max-height: 52px;
+  overflow: hidden;
+}
+
+.pl-tileview-tile-descriptionMedium {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  padding-top: 15px;
+}
